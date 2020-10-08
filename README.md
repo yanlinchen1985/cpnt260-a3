@@ -10,3 +10,6 @@ I have fixed the Media Queries in task 1 which makes the font size larger on mob
 
 
 
+The link to GitHub repo: https://github.com/yanlinchen1985/cpnt260-a3.git
+
+The webpage of a3:  https://yanlinchen1985.github.io/cpnt260-a3/
