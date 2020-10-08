@@ -16,7 +16,8 @@ main {
     background:
       linear-gradient(320deg, transparent, rgb(134, 113, 130)),
       url("https://picsum.photos/id/227/2000/2000");
-    background-position: cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -65,6 +66,7 @@ input {
   font-size: 28px;
   font-style: italic;
   font-family: 'Rubik', sans-serif;
+  padding-top: 0;
 }
 
 form {
@@ -72,7 +74,7 @@ form {
   margin: auto;
   border: 1px solid rgb(236, 236, 236);
   border-radius: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem；
 }
 
@@ -81,6 +83,7 @@ form {
   display: flex;
   padding-top: 1rem;
   font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
 }
 
 .text-fields p label {
@@ -90,6 +93,7 @@ form {
 .text-fields p input {
   flex: 1;
   max-width:30ch; 
+  height: 2rem;
 }
 
 /* Make the require* red*/
@@ -97,28 +101,32 @@ abbr {
   color: rgb(233, 0, 31);
 }
 
-/* Checkboxes and Radio buttons */
-fieldset ul {
+/* fieldset */
+fieldset {
   margin-left: 2rem;
   list-style-type: none;
+  padding-top: 1rem;
   padding-left: 0;
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
 }
 
-fieldset ul input {
+fieldset input {
   height: 1rem;
   width: 1rem;
 }
 
-fieldset{
-  padding-top: 1rem;
-}
-
-legend {
+fieldset legend {
   font-weight: bold;
   font-size: 25px;
-  padding-top: 1rem;
+  color: white;
+  text-shadow: 2px 2px rgb(27, 27, 27);
+  padding-top: 2rem;
+}
+
+.checkbox {
+  padding-top: 2rem;
 }
 
 /* Submit buttom */
@@ -129,14 +137,13 @@ footer {
 button {
   font-size: 24px;
   font-family: 'Rubik', sans-serif;
-  padding: 0.75rem rem;
   background-color: white;
   color: black;
   width: 150px;
   height: 40px;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 2rem; 
-  border-radius: 4rem;
+  border-radius: 2rem;
 }
 
 button:hover {
@@ -150,25 +157,26 @@ button:active {
 }
 
 
-/* Media Queries*/
-@media only screen and (max-width: 600px) {
-  /* larger font size on mobile*/
+/* Media Queries-make the hero section and form suitable for the full screen on mobile*/
+@media screen and (max-width: 600px){
+  /* make the font size the same on mobile */
   h1 { 
-    font-size: 60px; 
+    font-size: 43px;
+    line-height: 2.5rem; 
   }
 
   .a {
-    font-size: 40px;
+    font-size: 33px;
+    line-height: 2rem; 
   }
 
-  /* make form suitable for mobile and desktop screen sizes*/
+  /*issue to do: how to make the background full of the image without the blank?!*/  
   main * {
-    width: auto;
+    width: 100%;
   }
 
-  /* issue to do-- How to make the background full of the screen with no blank??!! */
   main {
-    background-size: cover
+    background-size: cover;
+    background-attachment: flex;
   }
 }
-

@@ -6,7 +6,7 @@
 
 
 
-I have fixed the Media Queries in task 1 which makes the font size larger on mobile.
+I have fixed the Media Queries in task 1 which makes the font size larger on mobile, but I had another issue. In this assignment I think the font size would be smaller or similar on mobile,because  the background image can not be full of all the screen when it has a scrollbar. Therefore, I made the font size of the hero section's heading and tagline look similar on mobile in this assignment.
 
 
 

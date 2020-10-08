@@ -33,40 +33,23 @@
     
             <fieldset>
               <legend>Favourite meal of the day</legend>
-              <ul class="list-reset">
-                <li>
-                  <label for="title_1">
-                    <input type="radio" id="title_1" name="title" value="B" >
-                        Breakfast
-                  </label>
-                </li>
-                <li>
-                  <label for="title_2">
-                    <input type="radio" id="title_2" name="title" value="L">
-                        Lunch
-                  </label>
-                </li>
-                <li> 
-                  <label for="title_3"> 
-                    <input type="radio" id="title_3" name="title" value="D">
-                        Dinner 
-                  </label> 
-                </li>
-              </ul>
+              <div class="selection">
+                <label for="favourite">Please choose your favourite:</label>
+                <select name="favourite" id="favourite">
+                  <option value="vegetable">Vegetable</option>
+                  <option value="cereal">Cereal</option>
+                  <option value="fruit">Fruit</option>
+                  <option value="protein">Protein</option>
+                  <option value="drink">Drink</option>
+                </select>
+              </div>
             </fieldset>
 
             <fieldset>
-              <legend>I would like to recieve promotional emails</legend>
-              <ul class="list-reset">
-                <li>
-                  <input type="checkbox" id="receive1" name="receive" value="yes">
-                  <label for="receive_1">Yes,I like.</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="receive2" name="receive" value="no">
-                  <label for="receive_2">No,thanks.</label>
-                </li>
-              </ul>
+              <div class="checkbox"></div>
+                <input type="checkbox" id="receive1" name="receive" value="yes">
+                <label for="receive_1">I would like to recieve promotional emails</label>
+              </div>
             </fieldset>
 
             <footer>
@@ -75,9 +58,7 @@
           </div>
         </fieldset>
       </form>
-    
     </div>
-    
   </main>
 
 </html>
